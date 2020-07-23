@@ -15,7 +15,7 @@
     --link-color-active: #2196F3;
 }
 
-/*Page main font and color styling*/
+/*Page main (body) font and color styling*/
 .page {
     background-color: var(--background-color-main);
     font-family: 'Roboto', sans-serif;
