@@ -9,48 +9,52 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body class="page">
-    <header>
+    
+    
+    <header class="page-header">    
         <!--Navbar-->
-        <nav>
-            <a class="link" href="./">
-               <span class="site-logo main">
-                   <span class="logo-part1"><b>Web </b></span><span class="logo-part2"><b>Studio</b></span>
-               </span> 
-            </a>
-            <!--main navigation-->
-            <ul class="site-nav list">
-                <li>
-                    <a class="link current" href="./index.html">Студия</a>
-                </li>
-                <li>
-                    <a class="link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li>
-                    <a class="link" href="#">Контакты</a>
-                </li>
-            </ul>
-            <!--contacts links-->
-            <ul class="site-contacts list">
-                <li>
-                    <a class="link" href="mailto:info@devstudio.com"><img src="./images/mail-pic.svg" alt="mail-icon"></a>
-                    <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="link" href="tel:+380961111111"><img src="./images/phone-pic.svg" alt="phone-icon"></a>
-                    <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </nav>
+        <nav class="nav-container">
+                <a class="link" href="./">
+                   <span class="site-logo main">
+                       <span class="logo-part1"><b>Web </b></span><span class="logo-part2"><b>Studio</b></span>
+                   </span> 
+                </a>
+                <!--main navigation-->
+                <ul class="site-nav list">
+                    <li>
+                        <a class="link current" href="./index.html">Студия</a>
+                    </li>
+                    <li>
+                        <a class="link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li>
+                        <a class="link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <!--contacts links-->
+                <ul class="site-contacts list">
+                    <li>
+                        <a class="link" href="mailto:info@devstudio.com"><img src="./images/mail-pic.svg" alt="mail-icon"></a>
+                        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="link" href="tel:+380961111111"><img src="./images/phone-pic.svg" alt="phone-icon"></a>
+                        <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+         </nav>
     </header>
     <main>
          <!--Hero!-->
-        <section class="hero">
+        <section class="hero-section">
+            <div class="hero-content"></div>
             <H1 class="hero-title">Эффективные решения для вашего бизнеса</H1>
-            <a class="link button hero" href="#">Заказать услугу</a>
+            <a class="link button hero" href="#">Заказать услугу</a>             
         </section>
         <!--Advantages-->
         <section class="advantages">
-            <h2 class="advantages-title" hidden>Наши преимущества</h2>
+            <div class="advantages-container">
+                <h2 class="advantages-title" hidden>Наши преимущества</h2>
             <ul class="advantages-list list">
                 <li>
                     <img class="advantages-image" src="./images/advan-antenna1.png" alt="marker antenna">
@@ -73,6 +77,7 @@
                     <p class="advantages-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="projects">
         <!--Projects examples-->

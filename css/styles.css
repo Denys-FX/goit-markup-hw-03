@@ -31,6 +31,8 @@
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .link {
@@ -52,6 +54,16 @@
     color:var( --text-color-accent);
 }
 /*Navbar (header)styling */
+
+.nav-container {
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px; /*80*/
+    width: 1200px;
+    color: var(--background-color-main);
+    outline: 2px solid green ;
+
+}
 
 .site-logo.main .logo-part1 {
     color: var(--text-color-accent);
@@ -82,12 +94,28 @@
 }
 
 /*Section "Hero" styling*/
-.hero {
+.hero-section {
+    outline: 2px solid green;
+    width: 1600px;
+    height: 600px;
     /*temp color*/
     background-color: rgba(47, 48, 58, 0.8);
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
+
+.hero-content {
+    height: 200px;
+}
 .hero-title {
+    outline: 2px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0px;
+    margin-bottom: 30px;
+    width: 696px;
+    height: 120px;
     color: var(--text-color-accent2);
     font-weight: 900;
     font-size: 44px;
@@ -96,20 +124,47 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.hero-title .link.button.hero {
-    font-weight: bold;
+.button.hero {
+    display:inline-block;
+    margin-bottom: 200px;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 32px;
+    border: 1px solid transparent;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    text-align: right;
     letter-spacing: 0.06em;
+    border-radius: 4px;
+    text-align: center;
 }
 
 /*Section "Advantages" styling*/
+.advantages-container {
+    outline: 2px solid tomato;
+    background-color: goldenrod;
+    width: 1200px;
+    height: 1100px; /*439*/
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.project-item {
+    display: block;
+    width: 270px;
+}
+
 .advantages-image {
     background-color: var(--background-color-secondary);
+    margin-bottom: 30px;
 }
 
 .advantages-subtitle {
+    display: inline-block;
+    width: 270px;
+    height: 16px;
+    margin-top:0;
+    margin-bottom: 10px;
     color: var(--text-color-main);
     font-weight: bold;
     font-size: 14px;
@@ -119,6 +174,10 @@
 }
 
 .advantages-text {
+    width: 270px;
+    height: 75px;
+    margin-top: 0;
+    margin-bottom: 94px;
     color: var(--text-color-secondary);
     font-size: 14px;
     line-height: 1.714;
@@ -128,6 +187,9 @@
 /*Section "Our Ptojects"*/
 /*Headers styling for "Our Ptojects","Our team", "Our Clients" */
 .section-title {
+    outline: 2px solid blueviolet;
+    margin-top: 0;
+    margin-bottom: 59px;
     color: var(--text-color-main);
     font-weight: bold;
     font-size: 36px;
@@ -137,16 +199,17 @@
 }
 
 .projects-list .link {
+    display: inline-block;
+    min-width: 371px;
+    height: 70px;
+    padding: 27px 90px;
     color: var(--text-color-accent2);
-    background-color: var(--background-color-transparent);
+    background-color:var(--background-color-transparent1);
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase
-}
-.project-item {
-    text-align: center;
 }
 
 /*Section "Team" styling*/
