@@ -29,6 +29,12 @@
     letter-spacing: 0.03em;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 .list {
     list-style: none;
     padding: 0;
@@ -55,14 +61,14 @@
 }
 /*Navbar (header)styling */
 
-.nav-container {
+.container  {
+    background-color: grey;
+}
+.page-header{
     margin-left: auto;
     margin-right: auto;
-    height: 120px; /*80*/
     width: 1200px;
-    color: var(--background-color-main);
-    outline: 2px solid green ;
-
+    outline: 1px solid green ;
 }
 
 .site-logo.main .logo-part1 {
@@ -73,7 +79,23 @@
     color: var(--text-color-secondary);
 }
 
+.site-nav {
+    display: flex;
+}
+
+/*всем элементам списка, кроме последнего
+равен этому выражению  .site-nav .item:not(:last-child) {}
+(применить к всем который следует за .item - первый ел-т в списке)
+*/
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--text-color-main);
     font-weight: 500;
     font-size: 14px;
@@ -85,7 +107,12 @@
     color: var(--text-color-accent);
 }
 
+.site-contacts {
+    display: flex;
+}
+
 .site-contacts .link {
+    padding-right: 30px;
     color: var(--text-color-secondary);
     font-weight: 500;
     font-size: 14px;
@@ -93,23 +120,30 @@
     letter-spacing: 0.02em
 }
 
+.site-contacts .item + .item {
+    padding-right: 31.5px;
+}
+
+
 /*Section "Hero" styling*/
+.hero-container {
+    background-color: var(--background-color-transparent1);
+}
+
 .hero-section {
-    outline: 2px solid green;
+    outline: 1px solid green;
     width: 1600px;
     height: 600px;
+    padding-top: 200px;
     /*temp color*/
-    background-color: rgba(47, 48, 58, 0.8);
+    background-color: var(--background-color-transparent);
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-.hero-content {
-    height: 200px;
-}
 .hero-title {
-    outline: 2px solid tomato;
+    outline: 1px solid tomato;
     margin-left: auto;
     margin-right: auto;
     margin-top:0px;
@@ -120,7 +154,6 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -136,22 +169,22 @@
     line-height: 1.875;
     letter-spacing: 0.06em;
     border-radius: 4px;
-    text-align: center;
-}
+   }
 
 /*Section "Advantages" styling*/
-.advantages-container {
-    outline: 2px solid tomato;
-    background-color: goldenrod;
+.advantages-section {
+    outline: 1px solid tomato;
+    padding-top: 94px;
     width: 1200px;
-    height: 1100px; /*439*/
+    height: 1200px; /*439*/
     margin-left:auto;
     margin-right: auto;
 }
 
-.project-item {
-    display: block;
+.advantages-item {
     width: 270px;
+    height: 251px;
+    margin: 0;
 }
 
 .advantages-image {
@@ -176,8 +209,7 @@
 .advantages-text {
     width: 270px;
     height: 75px;
-    margin-top: 0;
-    margin-bottom: 94px;
+    margin: 0;
     color: var(--text-color-secondary);
     font-size: 14px;
     line-height: 1.714;
@@ -185,11 +217,25 @@
 }
 
 /*Section "Our Ptojects"*/
+
+.projects-section {
+    outline: 1px solid green;
+    width: 1200px;
+    height: 1200px /*702px*/;
+    margin-left:auto;
+    margin-right: auto;
+    padding-bottom: 94px;
+}
+
+.project-item {
+    display: block;
+    width: 270px;
+}
+
 /*Headers styling for "Our Ptojects","Our team", "Our Clients" */
 .section-title {
-    outline: 2px solid blueviolet;
     margin-top: 0;
-    margin-bottom: 59px;
+    margin-bottom: 50px;
     color: var(--text-color-main);
     font-weight: bold;
     font-size: 36px;
@@ -200,47 +246,64 @@
 
 .projects-list .link {
     display: inline-block;
-    min-width: 371px;
+    min-width: 370px;
     height: 70px;
-    padding: 27px 90px;
+    padding: 27px 82px;
     color: var(--text-color-accent2);
     background-color:var(--background-color-transparent1);
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: center;
+    
 }
 
 /*Section "Team" styling*/
-.section-team {
+.container-team {
     background-color: var(--background-color-secondary);
+}
+
+.team {
+    outline: 1px solid tomato;
+    width: 1200px;
+    height: 702;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .team-item {
     text-align: center;
-
+}
+.team-member-photo {
+    margin-bottom: 30px;
 }
 
 .team-member-title {
+    margin-bottom: 10px;
     color:var(--text-color-main);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.266;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
 .team-department {
+    margin-top: 0;
+    margin-bottom: 16px;
+
     color:var(--text-color-secondary);
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
 .social-list .link {
     color: var(--link-color-inactive);
+    padding-bottom: 24px;
 }
 
 .social-list .link:hover,
@@ -249,6 +312,16 @@
 }
 
 /*Section "Clients" styling*/
+.clients {
+    outline: 1px solid tomato;
+    width: 1200px;
+    height: 370px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .company-list {
     text-align: center;
 }
