@@ -125,7 +125,7 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--text-color-secondary);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.42;
+    line-height: 1.5;
     letter-spacing: 0.02em
 }
 
@@ -197,7 +197,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .advantages-image {
-    display: inline-block;
+    display: block;
     padding-left: 100px;;
     padding-right: 100px;
     padding-top: 25px;
@@ -218,7 +218,7 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--text-color-main);
     font-weight: bold;
     font-size: 14px;
-    line-height: 1.15;
+    line-height: 1.142;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
@@ -274,7 +274,7 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--text-color-main);
     font-weight: bold;
     font-size: 36px;
-    line-height: 1.167;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -301,7 +301,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .team {
-    outline: 1px solid tomato;
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -366,9 +365,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Section "Clients" styling*/
 .clients {
-    outline: 1px solid tomato;
     width: 1200px;
-    height: 370px;
     padding-top: 94px;
     padding-bottom: 94px;
     margin-left: auto;
@@ -376,12 +373,37 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .company-list {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
 }
 
-.company-list .link {
-    color: var(--link-color-inactive);
+.company-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--link-color-inactive);
+    border-radius: 4px;
+       
 }
+
+.company-list.company-item + .company-item {
+    padding-left: 30px;
+}
+
+.company-list .link {
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-radius: 4px;
+    color: var(--link-color-inactive);
+    
+}
+
+
+
 .company-list .link:hover,
 .company-list .link:focus {
     color: var(--link-color-active);
