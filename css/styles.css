@@ -25,7 +25,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    line-height: 1.92;
+    line-height: 1.2;
     letter-spacing: 0.03em;
 }
 
@@ -68,18 +68,18 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
-
 
 .site-logo.main .logo-part1 {
     color: var(--text-color-accent);
-
 }
 
 .site-logo.main .logo-part2 {
@@ -121,7 +121,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-contacts .link {
-    padding-right: 30px;
     color: var(--text-color-secondary);
     font-weight: 500;
     font-size: 14px;
@@ -129,8 +128,8 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.02em
 }
 
-.site-contacts .item + .item {
-    padding-right: 31.5px;
+.site-contacts .item {
+    padding-left: 30px;
 }
 
 /*Section "Hero" styling*/
@@ -178,8 +177,10 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Section "Advantages" styling*/
 .advantages-section {
-    padding-top: 94px;
     width: 1200px;
+    padding-top: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
     
     margin-left:auto;
     margin-right: auto;
@@ -241,6 +242,8 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .project-item {
@@ -263,7 +266,6 @@ h1,h2,h3,h4,h5,h6 {
 .project-link {
     width: 370px;
     height: 70px;
-
 }
 
 /*Headers styling for "Our Ptojects","Our team", "Our Clients" */
@@ -304,6 +306,8 @@ h1,h2,h3,h4,h5,h6 {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left:auto;
     margin-right: auto;
 }
@@ -368,6 +372,8 @@ h1,h2,h3,h4,h5,h6 {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -397,8 +403,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 32px;
     padding-bottom: 32px;
     border-radius: 4px;
-    color: var(--link-color-inactive);
-    
+    color: var(--link-color-inactive); 
 }
 
 .company-list .link:hover,
@@ -408,8 +413,6 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Footer styling*/
 .container-footer {
-   
-
     background-color: var(--background-color-footer);
 }
 
@@ -417,24 +420,33 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-between;
     
-
+    
     width: 1600px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 215px;
+    padding-right: 215px;
+
     margin-left: auto;
     margin-right: auto;
 }
-
+/*Logo + Address block*/
 .section-address {
-    display: block;
+    display: flex;
+    flex-direction: column;
     width: 231px;
     padding-top: 60px;
     padding-bottom: 60px;
-    outline: 1px solid tomato;
-   
 }
 
-.logo {
+.section-address .link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: var(--text-color-footer);
+}
+
+.logo.footer.link{
+    display: block;
     margin-bottom: 20px;
 }
 
@@ -446,63 +458,39 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--text-color-accent2);
 }
 
-.section-join {
-    display: block;
-    width: 206px;
-    padding-top: 72px;
-    padding-bottom: 94px;
-    outline: 1px solid tomato;
-   
-}
-
-.section-signup {
-    width: 570px;
-    outline: 1px solid tomato;
-    padding-top: 72px;
-    padding-bottom: 94px;
-    margin-left: 94px;
-}
-
-.social-list.join {
-    width: 206px;
-}
-
-.social-list.join .social-list-item + .social-list-item {
-    margin-left: 10px;
-}
-
-.social-list-item {
-    display: block;
-    width: 44px;
-    height:  44px;
-    text-align: center;
-}
-
-.social-list.join .link {
-    border: 1px;
-    border-color: tomato;
-    outline: 1px solid tomato;
-}
-
 .address-text {
     margin-top: 0;
     margin-bottom: 9px;
+    
     color: var(--text-color-accent2);
     font-style: normal;
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
 }
-
-.link1, .link2 {
+.contacts .link {
     display: inline-block;
 }
 
-.contacts .link1 {
+.contacts .link,
+.contacts .mail {
+    display: inline-block;
+    font-style: normal;
+}
+
+.contacts .mail {
     margin-bottom: 9px;
 }
 
-
+/*Join block*/
+.section-join {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    padding-top: 72px;
+    padding-bottom: 100px;
+    margin-left: 69px;
+}
 
 .join-text, .signup-text {
     margin-top:0;
@@ -516,19 +504,76 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-
-
-.section-address .link {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color-footer);
+.social-list .join {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
+.social-list-item {
+   
+    width: 44px;
+    height: 44px;
+}
+
+.social-list.join .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--text-color-footer);
+    border-radius: 25px;
+}
+
+.social-list.join .social-list-item + .social-list-item {
+    margin-left: 10px;
+}
+
+/*Sign-up block*/
+.section-signup {
+    width: 570px;
+    margin-left: 94px;
+    padding-top: 72px;
+    padding-bottom: 94px;
+}
+
+.sign-container {
+    display: flex;
+
+}
+.sign-container .button {
+    display: inline-block;
+    min-width: 200px;
+    height: 50px;
+    padding: 10px 29px;
+    border: 1px solid transparent;
+    margin-left: 12px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    text-align: center;
+}
+
+
 .email-input {
-    color:var(--text-color-footer);
+    display: flex;
+    align-items: center;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    
+
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--text-color-footer);
+    border: 1px solid var(--text-color-footer);
+    border-radius: 4px;
 }
 
 /*Portfolio page styling*/
