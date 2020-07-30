@@ -351,15 +351,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .social-list .link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     padding-left: auto;
     padding-right: auto;
-    border: 0;
+    border: 1px solid var(--background-color-main);
+    border-radius: 25px;
 
     font-weight: 500;
     color: var(--link-color-inactive);
+}
+
+.social-list .social-list-item + .social-list-item {
+    margin-left: 10px;
 }
 
 .social-list .link:hover,
@@ -381,15 +388,14 @@ h1,h2,h3,h4,h5,h6 {
 .company-list {
     display: flex;
     justify-content: space-between;
-    text-align: center;
 }
 
 .company-item {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     width: 170px;
     height: 90px;
+
     border: 1px solid var(--link-color-inactive);
     border-radius: 4px; 
 }
@@ -399,9 +405,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .company-list .link {
-    display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    display: flex;
+    align-items: center;
+
     border-radius: 4px;
     color: var(--link-color-inactive); 
 }
@@ -419,7 +425,6 @@ h1,h2,h3,h4,h5,h6 {
 .section-footer {
     display: flex;
     justify-content: space-between;
-    
     
     width: 1600px;
     padding-left: 215px;
@@ -520,17 +525,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .social-list.join .link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     border: 1px solid var(--text-color-footer);
     border-radius: 25px;
 }
 
-.social-list.join .social-list-item + .social-list-item {
-    margin-left: 10px;
-}
 
 /*Sign-up block*/
 .section-signup {
