@@ -65,10 +65,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 .nav-container{
     width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-container {
@@ -120,7 +120,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-contacts .link {
-    
     color: var(--text-color-secondary);
     font-weight: 500;
     font-size: 14px;
@@ -145,20 +144,19 @@ h1,h2,h3,h4,h5,h6 {
     width: 1600px;
     height: 600px;
     padding-top: 200px;
-    /*temp color*/
-    background-color: var(--background-color-transparent);
     margin-left: auto;
     margin-right: auto;
+    
+    background-color: var(--background-color-transparent);
     text-align: center;
 }
 
 .hero-title {
+    width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:0px;
     margin-bottom: 30px;
-    width: 696px;
-    height: 120px;
+    
     color: var(--text-color-accent2);
     font-weight: 900;
     font-size: 44px;
@@ -173,6 +171,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 10px 32px;
     border: 1px solid transparent;
     font-weight: 700;
+
     font-size: 16px;
     line-height: 1.875;
     letter-spacing: 0.06em;
@@ -185,14 +184,12 @@ h1,h2,h3,h4,h5,h6 {
     padding-top: 94px;
     padding-left: 15px;
     padding-right: 15px;
-    
     margin-left:auto;
     margin-right: auto;
 }
 
 .advantages-item {
     width: 270px;
-    margin: 0;
     align-items: center;
 }
 
@@ -207,17 +204,14 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 100px;
     padding-top: 25px;
     padding-bottom: 25px;
-    background-size: auto;
-
-    background-color: var(--background-color-secondary);
     margin-bottom: 30px;
-    align-items: center;
+   
+    background-color: var(--background-color-secondary);    
 }
 
 .advantages-subtitle {
     display: inline-block;
     width: 270px;
-    margin-top:0;
     margin-bottom: 10px;
 
     color: var(--text-color-main);
@@ -230,7 +224,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .advantages-text {
     width: 270px;
-    margin: 0;
+
     color: var(--text-color-secondary);
     font-size: 14px;
     line-height: 1.714;
@@ -242,12 +236,12 @@ h1,h2,h3,h4,h5,h6 {
 .projects-section {
     width: 1200px;
     height: 480px;
-    margin-left:auto;
-    margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .project-item {
@@ -433,7 +427,6 @@ h1,h2,h3,h4,h5,h6 {
     width: 1600px;
     padding-left: 215px;
     padding-right: 215px;
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -448,6 +441,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .section-address .link {
     display: block;
+
     font-size: 14px;
     line-height: 1.72;
     letter-spacing: 0.03em;
@@ -513,33 +507,18 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.social-list .join {
-    display: flex;
-    flex-direction: column;
-    
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
-
-.social-list-item {
-   
-    width: 44px;
-    height: 44px;
-}
 
 .social-list.join .link {
     border: 1px solid var(--text-color-footer);
     border-radius: 25px;
 }
 
-
 /*Sign-up block*/
 .section-signup {
     width: 570px;
-    margin-left: 94px;
     padding-top: 72px;
     padding-bottom: 94px;
+    margin-left: 94px;
 }
 
 .sign-container {
@@ -562,7 +541,6 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
-
 .email-input {
     display: flex;
     align-items: center;
@@ -570,7 +548,6 @@ h1,h2,h3,h4,h5,h6 {
     height: 50px;
     padding-left: 16px;
     
-
     font-size: 16px;
     line-height: 20px;
     color: var(--text-color-footer);
