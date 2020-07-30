@@ -25,7 +25,7 @@
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    line-height: 2;
+    line-height: 1.92;
     letter-spacing: 0.03em;
 }
 
@@ -385,8 +385,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 170px;
     height: 90px;
     border: 1px solid var(--link-color-inactive);
-    border-radius: 4px;
-       
+    border-radius: 4px; 
 }
 
 .company-list.company-item + .company-item {
@@ -402,34 +401,114 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 
-
-
 .company-list .link:hover,
 .company-list .link:focus {
     color: var(--link-color-active);
 }
 
 /*Footer styling*/
+.container-footer {
+   
+
+    background-color: var(--background-color-footer);
+}
+
 .section-footer {
-    background-color: var(--background-color-footer) ;
+    display: flex;
+    justify-content: space-between;
+    
+
+    width: 1600px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-address {
+    display: block;
+    width: 231px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    outline: 1px solid tomato;
+   
+}
+
+.logo {
+    margin-bottom: 20px;
 }
 
 .site-logo.secondary .logo-part1 {
     color:var(--link-color-active);
 }
-
+    
 .site-logo.secondary .logo-part2 {
     color: var(--text-color-accent2);
 }
 
+.section-join {
+    display: block;
+    width: 206px;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    outline: 1px solid tomato;
+   
+}
+
+.section-signup {
+    width: 570px;
+    outline: 1px solid tomato;
+    padding-top: 72px;
+    padding-bottom: 94px;
+    margin-left: 94px;
+}
+
+.social-list.join {
+    width: 206px;
+}
+
+.social-list.join .social-list-item + .social-list-item {
+    margin-left: 10px;
+}
+
+.social-list-item {
+    display: block;
+    width: 44px;
+    height:  44px;
+    text-align: center;
+}
+
+.social-list.join .link {
+    border: 1px;
+    border-color: tomato;
+    outline: 1px solid tomato;
+}
+
 .address-text {
+    margin-top: 0;
+    margin-bottom: 9px;
     color: var(--text-color-accent2);
+    font-style: normal;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.72;
     letter-spacing: 0.03em;
 }
 
+.link1, .link2 {
+    display: inline-block;
+}
+
+.contacts .link1 {
+    margin-bottom: 9px;
+}
+
+
+
 .join-text, .signup-text {
+    margin-top:0;
+    margin-bottom: 20px;
+    padding: 0;
+
     color: var(--text-color-accent2);
     font-weight: bold;
     font-size: 14px;
@@ -438,9 +517,6 @@ h1,h2,h3,h4,h5,h6 {
     text-transform: uppercase;
 }
 
-.section-address {
-    text-align: left;
-}
 
 .section-address .link {
     font-style: normal;
@@ -449,7 +525,6 @@ h1,h2,h3,h4,h5,h6 {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color-footer);
-
 }
 
 .email-input {
