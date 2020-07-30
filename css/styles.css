@@ -34,7 +34,6 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
 }
 
-
 .list {
     list-style: none;
     padding: 0;
@@ -64,10 +63,10 @@ h1,h2,h3,h4,h5,h6 {
 .container  {
     background-color: var(--background-color-main);
 }
-.page-header{
+.nav-container{
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -121,6 +120,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-contacts .link {
+    
     color: var(--text-color-secondary);
     font-weight: 500;
     font-size: 14px;
@@ -128,10 +128,14 @@ h1,h2,h3,h4,h5,h6 {
     letter-spacing: 0.02em
 }
 
-.site-contacts .item {
+.site-contacts .item + .item{
     padding-left: 30px;
 }
 
+.site-contacts .item .link + .link {
+    padding-left: 10px;
+
+}
 /*Section "Hero" styling*/
 .hero-container {
     background-color: var(--background-color-transparent1);
