@@ -626,6 +626,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .portfolio-item {
+    display: flex;
     margin-bottom: 30px;
     margin-bottom: 30px;
     margin-right: 30px;
@@ -679,9 +680,11 @@ calc((100% - (N of margin in row)*margin) / N of elements in row */
 
 .portfolio-text {
     width: 370px;
+    height: 294px;
+    margin-top: -294px;
 
     color: var(--text-color-accent2);
-    background: var(--background-color-transparent2);
+    background-color: var(--background-color-transparent2);
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
