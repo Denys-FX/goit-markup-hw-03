@@ -60,9 +60,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 /*Navbar (header)styling */
 
-.container  {
+.container {
     background-color: var(--background-color-main);
 }
+
+.header-container {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .nav-container{
     width: 1200px;
     padding-left: 15px;
@@ -557,6 +562,9 @@ h1,h2,h3,h4,h5,h6 {
 
 /*Portfolio page styling*/
 /*buttons on Portfolio page*/
+.nav-container.border {
+    
+}
 
 .nav-button:hover,
 .nav-button:focus {
