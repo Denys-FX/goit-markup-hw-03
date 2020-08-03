@@ -237,12 +237,13 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Section "Our Ptojects"*/
+.projects-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .projects-section {
     width: 1200px;
-    height: 480px;
-    padding-top: 94px;
-    padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left:auto;
@@ -307,7 +308,6 @@ h1,h2,h3,h4,h5,h6 {
 
 .team {
     width: 1200px;
-    padding-top: 94px;
     padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
@@ -378,10 +378,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Section "Clients" styling*/
-.clients {
-    width: 1200px;
+
+.clients-container {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.clients {
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
