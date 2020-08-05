@@ -307,11 +307,12 @@ h1,h2,h3,h4,h5,h6 {
 /*Section "Team" styling*/
 .team-container {
     background-color: var(--background-color-secondary);
-    padding-bottom: 94px;
 }
 
 .team-section {
-    width: 1200px;
+    width: 1600px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left:auto;
@@ -320,13 +321,17 @@ h1,h2,h3,h4,h5,h6 {
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .team-item {
     text-align: center;
     padding-bottom: 24px;
 }
+.team-list .team-item + .team-item {
+    margin-left: 30px;
+}
+
 .team-member-photo {
     display: block;
     margin-bottom: 30px;
