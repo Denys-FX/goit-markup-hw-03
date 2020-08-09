@@ -13,6 +13,8 @@
     --background-color-footer: #2F303A;
     --link-color-inactive: #AFB1B8;
     --link-color-active: #2196F3;
+    --nav-underline: #ECECEC;
+    --cards-line: #EEEEEE;
 }
 
 /*Page main (body) font and color styling*/
@@ -65,8 +67,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .header-container {
-    display: flex;
-    justify-content: center;
     max-width: 1600px;
 
     padding-left: 15px;
@@ -74,11 +74,14 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: auto;
     margin-right: auto;
 }
+.header-container.underline {
+    border-bottom: 1px solid var(--nav-underline);
+}
 
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .site-logo.main .logo-part1 {
@@ -455,6 +458,8 @@ h1,h2,h3,h4,h5,h6 {
 .footer-container {
     background-color: var(--background-color-footer);
     max-width: 1600px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -592,7 +597,7 @@ h1,h2,h3,h4,h5,h6 {
 /*Portfolio page styling*/
 /*Portfolio navigation*/
 
-.portfolio-container {
+.portfolio-nav {
     max-width: 1600px;
     padding-right: 15px;
     padding-left: 15px;
@@ -607,7 +612,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: auto;
 }
 
-.portfolio-nav {
+.portfolio-nav-list {
     display: flex;
     justify-content: center;
     padding-bottom: 50px;
@@ -622,12 +627,12 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 4px;
     
     color: var(--text-color-main);
-    background-color: var(--background-color-secondary:);
+    background-color: var(--background-color-secondary);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
     text-align: center;
-    letter-spacing  : 0.03em;
+    letter-spacing: 0.03em;
 }
 .portfolio-nav .portfolio-nav-item + .portfolio-nav-item {
     margin-left: 8px;
@@ -645,20 +650,23 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Portfolio items container*/
-.portfolio-container {
+.portfolio {
     display: flex;
-    
-    width: 1200px;
+    max-width: 1600px;
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 94px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.portfolio-container { 
+    padding-bottom: 94px;
 }
 
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .portfolio-item {
@@ -666,6 +674,8 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 30px;
     margin-bottom: 30px;
     margin-right: 30px;
+
+    border: 1px solid var(--cards-line);
 }
 
 /*к каждому 3му ел-ту*/
@@ -683,7 +693,7 @@ margin-right: 30px;
 formula
 calc((100% - (N of margin in row)*margin) / N of elements in row */
 
-.portfoli0-image {
+.portfolio-image {
     display: block;
 }
 
