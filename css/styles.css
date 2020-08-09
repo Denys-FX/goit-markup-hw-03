@@ -74,7 +74,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: auto;
     margin-right: auto;
 }
-.header-container.underline {
+.container.underline {
     border-bottom: 1px solid var(--nav-underline);
 }
 
@@ -143,8 +143,11 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 /*Section "Hero" styling*/
-.hero-container {
+.hero {
     background-color: var(--background-color-transparent1);
+}
+
+.hero-container {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
@@ -321,8 +324,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Section "Team" styling*/
-.team-container {
+.team {
     background-color: var(--background-color-secondary);
+}
+
+.team-container {
     max-width: 1600px;
     margin-left:auto;
     margin-right: auto;
@@ -455,8 +461,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*Footer styling*/
-.footer-container {
+.footer {
     background-color: var(--background-color-footer);
+}
+
+.footer-container {
     max-width: 1600px;
     padding-right: 15px;
     padding-left: 15px;
